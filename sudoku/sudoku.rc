@@ -1,0 +1,188 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SUDOKU              ICON                    "sudoku.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_SUDOKU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Give Problem                         CTRL+G", ID_FILE_GIVE
+        POPUP "&Auto Generate Problem  "
+        BEGIN
+            MENUITEM "Easy",                        ID_AUTOGENERATE_EASY
+            MENUITEM "Medium",                      ID_AUTOGENERATE_MEDIUM
+            MENUITEM "Hard",                        ID_AUTOGENERATE_HARD
+            MENUITEM "Hardest",                     ID_AUTOGENERATE_HARDEST
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit                                         ALT+F4", IDM_EXIT
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Hint                             H", ID_TOOLS_HINTS
+        MENUITEM SEPARATOR
+        MENUITEM "Sol&ve                           V", ID_TOOLS_SOLVE
+        MENUITEM "Solve From &Start        S",  ID_TOOLS_SOLVEFROMSTART
+        MENUITEM SEPARATOR
+        MENUITEM "&Check Sudoku           C",   ID_TOOLS_CHECKSUDOKU
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...               F1", IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ID_ACCELERATOR ACCELERATORS 
+BEGIN
+    "G",            ID_FILE_GIVE,           VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_TOOLS_CHECKSUDOKU,   VIRTKEY, NOINVERT
+    "H",            ID_TOOLS_HINTS,         VIRTKEY, NOINVERT
+    "V",            ID_TOOLS_SOLVE,         VIRTKEY, NOINVERT
+    VK_F1,          IDM_ABOUT,              VIRTKEY, NOINVERT
+    VK_F4,          IDM_EXIT,               VIRTKEY, ALT, NOINVERT
+    "S",            ID_TOOLS_SOLVEFROMSTART, VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 149, 53
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Sudoku "
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    ICON            IDI_SUDOKU,IDC_STATIC,14,12,16,16
+    LTEXT           "Sudoku, Version 1.0",IDC_STATIC,38,14,93,8,SS_NOPREFIX
+    LTEXT           "-By Prasanta Halder",IDC_STATIC,54,26,70,8
+    DEFPUSHBUTTON   "OK",IDOK,98,37,46,12,WS_GROUP
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SUDOKU              BITMAP                  "Sudoku.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 144
+        BOTTOMMARGIN, 49
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "sudoku"
+    IDC_SUDOKU              "SUDOKU"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
